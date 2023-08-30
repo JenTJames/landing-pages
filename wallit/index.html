@@ -29,10 +29,10 @@
         >
           <i class="material-icons text-3xl text-slate-50"> auto_mode</i>
         </div>
-        <h1 class="text-xl font-bold">Wallit</h1>
+        <h1 class="hidden md:block md:text-xl md:font-bold">Wallit</h1>
       </div>
       <!-- links -->
-      <div class="flex justify-center items-center gap-5">
+      <div class="hidden md:flex md:justify-center md:items-center md:gap-5">
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Feature</p>
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
           Products
@@ -44,7 +44,7 @@
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Contact</p>
       </div>
       <!-- Auth buttons -->
-      <div class="flex justify-center items-center gap-2">
+      <div class="hidden md:flex md:justify-center md:items-center md:gap-2">
         <button
           class="p-3 w-32 bg-transparent border rounded-3xl text-slate-500 hover:bg-blue-100 hover:text-blue-700"
         >
@@ -56,6 +56,12 @@
           Sign Up
         </button>
       </div>
+      <!-- Burger Menu for small devices -->
+      <button
+        class="md:hidden hover:bg-slate-100 rounded-full p-3 flex justify-center items-center"
+      >
+        <span class="material-icons text-slate-500"> menu </span>
+      </button>
     </div>
 
     <!-- Hero Section -->
