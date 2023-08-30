@@ -59,11 +59,24 @@
       <!-- Burger Menu for small devices -->
       <button
         class="md:hidden hover:bg-slate-100 rounded-full p-3 flex justify-center items-center"
+        id="menu_button"
       >
         <span class="material-icons text-slate-500"> menu </span>
       </button>
     </div>
-
+    <!-- Burger menu links -->
+    <div
+      class="md:hidden flex flex-col gap-3 items-center z-10"
+      id="mobile_menu"
+    >
+      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Feature</p>
+      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Products</p>
+      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
+        Testimonials
+      </p>
+      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">FAQ</p>
+      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Contact</p>
+    </div>
     <!-- Hero Section -->
     <div class="flex w-full items-center">
       <!-- Left Section -->
@@ -596,5 +609,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
