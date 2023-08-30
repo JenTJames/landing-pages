@@ -17,9 +17,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-slate-50 font-noto">
+  <body class="bg-slate-50 font-noto min-h-screen w-full">
     <!-- Navbar -->
-    <div class="flex justify-between items-center px-14 py-7">
+    <div
+      class="flex justify-between items-center px-14 py-7 sticky top-0 bg-slate-50"
+    >
       <!-- brand -->
       <div class="flex justify-center items-center gap-2">
         <div
@@ -60,7 +62,7 @@
       </div>
     </div>
     <!-- Hero Section -->
-    <div class="flex w-full">
+    <div class="flex w-full items-center">
       <!-- Left Section -->
       <div class="w-3/5 px-14 py-7 flex flex-col gap-5">
         <!-- hero heading -->
@@ -149,7 +151,65 @@
         </div>
       </div>
       <!-- Right Section -->
+      <div class="w-2/5 bg-slate-100 rounded-md h-[950px]"></div>
+    </div>
+
+    <!-- Spending Section -->
+    <div class="flex justify-around my-28 mx-28">
+      <!-- Feature Section -->
+      <div class="flex flex-col gap-3 items-start">
+        <!-- Feature Pill -->
+        <div class="py-2 px-4 bg-slate-200 rounded-full">
+          <p class="text-slate-700 font-semibold">Spending This Month</p>
+        </div>
+        <!-- Headng -->
+        <h1 class="text-5xl text-indigo-900 font-semibold leading-tight">
+          The Future Trends of Feature Spending
+        </h1>
+        <!-- Paragraph -->
+        <p class="text-slate-600 text-lg w-4/5">
+          Recommends ways to prepare for and adapt to the feature spending
+          landscape and track expenses and income
+        </p>
+        <!-- CTA Button -->
+        <button
+          class="p-3 px-5 flex items-center gap-8 bg-indigo-500 rounded-3xl text-slate-50 hover:bg-indigo-600"
+        >
+          Learn More
+          <span class="material-icons"> east </span>
+        </button>
+      </div>
+      <!-- SVG Section -->
       <div class="w-2/5 bg-slate-100 rounded-md"></div>
+    </div>
+
+    <!-- Reports Section -->
+    <div class="flex justify-around gap-20 my-28 mx-28">
+      <!-- SVG Section -->
+      <div class="w-2/5 bg-slate-100 rounded-md"></div>
+      <!-- Report Section -->
+      <div class="flex flex-col gap-3 items-start w-3/5">
+        <!-- Feature Pill -->
+        <div class="py-2 px-4 bg-slate-200 rounded-full">
+          <p class="text-slate-700 font-semibold">Report</p>
+        </div>
+        <!-- Heading -->
+        <h1 class="text-5xl text-indigo-900 font-semibold leading-tight">
+          Achieve Independence and Financial Stability
+        </h1>
+        <!-- Paragraph -->
+        <p class="text-slate-600 text-lg w-4/5">
+          The expert guide to smart investing, effective budgeting and wealth
+          creation strategies that aids planning, discipline and smart choices
+        </p>
+        <!-- CTA Button -->
+        <button
+          class="p-3 px-5 flex items-center gap-8 bg-indigo-500 rounded-3xl text-slate-50 hover:bg-indigo-600"
+        >
+          Learn More
+          <span class="material-icons"> east </span>
+        </button>
+      </div>
     </div>
   </body>
 </html>
