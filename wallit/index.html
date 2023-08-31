@@ -20,7 +20,7 @@
   <body class="bg-slate-50 font-noto min-h-screen w-full">
     <!-- Navbar -->
     <div
-      class="flex justify-between items-center px-14 py-7 sticky top-0 bg-slate-50"
+      class="flex justify-between items-center p-7 md:px-14 sticky top-0 bg-slate-50"
     >
       <!-- brand -->
       <div class="flex justify-center items-center gap-2">
@@ -87,13 +87,17 @@
     <!-- Hero Section -->
     <div class="flex w-full items-center">
       <!-- Left Section -->
-      <div class="w-3/5 px-14 py-7 flex flex-col gap-5">
+      <div class="w-full p-7 md:w-3/5 md:px-14 flex flex-col gap-5">
         <!-- hero heading -->
-        <h1 class="text-7xl text-blue-900 font-semibold leading-tight">
+        <h1
+          class="text-4xl text-justify text-justify-auto md:text-start md:text-7xl text-blue-900 font-semibold leading-tight"
+        >
           Manage your finances and Achieve Financal Freedom
         </h1>
         <!-- hero paragraph -->
-        <p class="text-lg text-slate-500 w-10/12">
+        <p
+          class="text-base text-justify text-justify-auto md:text-lg text-slate-500 md:w-10/12"
+        >
           Achieving financial freedom is two interrelated goals that require
           planning, discipline and smart choices with expert guidance for smart
           investing, effective budgeting and wealth creation strategies
@@ -101,12 +105,12 @@
         <!-- CTA buttons -->
         <div class="flex items-center gap-2">
           <button
-            class="px-3 py-4 w-52 bg-blue-500 rounded-3xl text-slate-50 font-bold text-xl hover:bg-blue-600"
+            class="px-3 py-4 w-32 md:w-52 bg-blue-500 rounded-3xl text-slate-50 font-bold text-sm md:text-xl hover:bg-blue-600"
           >
             Get Started
           </button>
           <button
-            class="px-3 py-4 w-52 bg-transparent border rounded-3xl text-slate-500 hover:bg-blue-100 hover:text-blue-700"
+            class="px-3 py-4 w-32 md:w-52 bg-transparent border rounded-3xl text-slate-500 text-sm md:text-xl hover:bg-blue-100 hover:text-blue-700"
           >
             Learn More
           </button>
@@ -174,7 +178,9 @@
         </div>
       </div>
       <!-- Right Section -->
-      <div class="w-2/5 bg-slate-100 rounded-md h-[950px]"></div>
+      <div
+        class="hidden md:block w-2/5 bg-slate-100 rounded-md h-[950px]"
+      ></div>
     </div>
 
     <!-- Spending Section -->

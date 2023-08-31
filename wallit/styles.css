@@ -7,3 +7,6 @@
   color: transparent;
   background-image: linear-gradient(to right, #fbbf24, #fffbeb);
 }
+.text-justify-auto {
+  text-justify: none;
+}
