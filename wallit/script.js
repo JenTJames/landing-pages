@@ -3,4 +3,5 @@ const mobileMenu = document.getElementById("mobile_menu");
 
 mobileMenuButton.addEventListener("click", function () {
   mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("flex");
 });
