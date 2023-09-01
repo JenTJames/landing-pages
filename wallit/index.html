@@ -19,20 +19,59 @@
   </head>
   <body class="bg-slate-50 font-noto min-h-screen w-full">
     <!-- Navbar -->
-    <div
-      class="flex justify-between items-center p-7 md:px-14 sticky top-0 bg-slate-50 z-50"
-    >
-      <!-- brand -->
-      <div class="flex justify-center items-center gap-2">
-        <div
-          class="w-12 h-12 rounded-full bg-blue-500 flex justify-center items-center"
-        >
-          <i class="material-icons text-3xl text-slate-50"> auto_mode</i>
+    <div class="flex flex-col sticky top-0 z-50">
+      <div class="flex justify-between items-center p-7 md:px-14 bg-slate-50">
+        <!-- brand -->
+        <div class="flex justify-center items-center gap-2">
+          <div
+            class="w-12 h-12 rounded-full bg-blue-500 flex justify-center items-center"
+          >
+            <i class="material-icons text-3xl text-slate-50"> auto_mode</i>
+          </div>
+          <h1 class="hidden md:block md:text-xl md:font-bold">Wallit</h1>
         </div>
-        <h1 class="hidden md:block md:text-xl md:font-bold">Wallit</h1>
+        <!-- links -->
+        <div class="hidden md:flex md:justify-center md:items-center md:gap-5">
+          <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
+            Feature
+          </p>
+          <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
+            Products
+          </p>
+          <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
+            Testimonials
+          </p>
+          <p class="text-slate-500 hover:text-blue-500 cursor-pointer">FAQ</p>
+          <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
+            Contact
+          </p>
+        </div>
+        <!-- Auth buttons -->
+        <div class="hidden md:flex md:justify-center md:items-center md:gap-2">
+          <button
+            class="p-3 w-32 bg-transparent border rounded-3xl text-slate-500 hover:bg-blue-100 hover:text-blue-700"
+          >
+            Login
+          </button>
+          <button
+            class="p-3 w-32 bg-blue-500 rounded-3xl text-slate-50 hover:bg-blue-600"
+          >
+            Sign Up
+          </button>
+        </div>
+        <!-- Burger Menu for small devices -->
+        <button
+          class="md:hidden hover:bg-slate-100 rounded-full p-3 flex justify-center items-center"
+          id="menu_button"
+        >
+          <span class="material-icons text-slate-500"> menu </span>
+        </button>
+        <!-- Burger menu links -->
       </div>
-      <!-- links -->
-      <div class="hidden md:flex md:justify-center md:items-center md:gap-5">
+      <div
+        class="hidden md:hidden bg-slate-50 flex-col gap-3 items-center z-10 px-5"
+        id="mobile_menu"
+      >
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Feature</p>
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
           Products
@@ -42,47 +81,14 @@
         </p>
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">FAQ</p>
         <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Contact</p>
-      </div>
-      <!-- Auth buttons -->
-      <div class="hidden md:flex md:justify-center md:items-center md:gap-2">
-        <button
-          class="p-3 w-32 bg-transparent border rounded-3xl text-slate-500 hover:bg-blue-100 hover:text-blue-700"
+        <div class="border w-full"></div>
+        <p
+          class="text-slate-500 hover:text-blue-500 cursor-pointer font-semibold"
         >
           Login
-        </button>
-        <button
-          class="p-3 w-32 bg-blue-500 rounded-3xl text-slate-50 hover:bg-blue-600"
-        >
-          Sign Up
-        </button>
+        </p>
+        <p class="text-blue-500 cursor-pointer font-semibold">Sign Up</p>
       </div>
-      <!-- Burger Menu for small devices -->
-      <button
-        class="md:hidden hover:bg-slate-100 rounded-full p-3 flex justify-center items-center"
-        id="menu_button"
-      >
-        <span class="material-icons text-slate-500"> menu </span>
-      </button>
-    </div>
-    <!-- Burger menu links -->
-    <div
-      class="hidden md:hidden flex-col gap-3 items-center z-10 px-5"
-      id="mobile_menu"
-    >
-      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Feature</p>
-      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Products</p>
-      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">
-        Testimonials
-      </p>
-      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">FAQ</p>
-      <p class="text-slate-500 hover:text-blue-500 cursor-pointer">Contact</p>
-      <div class="border w-full"></div>
-      <p
-        class="text-slate-500 hover:text-blue-500 cursor-pointer font-semibold"
-      >
-        Login
-      </p>
-      <p class="text-blue-500 cursor-pointer font-semibold">Sign Up</p>
     </div>
     <!-- Hero Section -->
     <div class="flex w-full items-center">
