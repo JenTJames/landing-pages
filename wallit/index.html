@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wallit</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/brand.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -96,7 +97,7 @@
       <div class="w-full p-7 md:w-3/5 md:px-14 flex flex-col gap-5">
         <!-- hero heading -->
         <h1
-          class="text-4xl text-justify text-justify-auto md:text-start md:text-7xl text-blue-900 font-semibold leading-tight"
+          class="text-4xl text-justify text-justify-auto md:text-start lg:text-7xl text-blue-900 font-semibold leading-tight"
         >
           Manage your finances and Achieve Financal Freedom
         </h1>
@@ -186,13 +187,17 @@
         </div>
       </div>
       <!-- Right Section -->
-      <div
-        class="hidden md:block w-2/5 bg-slate-100 rounded-md h-[950px]"
-      ></div>
+      <img
+        class="hidden md:block w-2/5 rounded-md"
+        src="./assets/hero.svg"
+        alt="hero"
+      />
     </div>
 
     <!-- Spending Section -->
-    <div class="flex justify-center md:justify-around m-10 md:my-28 md:mx-28">
+    <div
+      class="flex justify-center items-center md:justify-around m-10 md:my-28 md:mx-28"
+    >
       <!-- Feature Section -->
       <div class="flex flex-col gap-3 items-start">
         <!-- Feature Pill -->
@@ -221,17 +226,24 @@
         </button>
       </div>
       <!-- SVG Section -->
-      <div class="hidden md:block w-2/5 bg-slate-100 rounded-md"></div>
+      <img
+        class="hidden md:block min-w-[350px] w-1/4 rounded-md"
+        src="./assets/feature-1.svg"
+        alt="feature-1"
+      />
     </div>
 
     <!-- Reports Section -->
-    <div
-      class="flex sm:justify-center md:gap-16 md:justify-around m-10 md:my-28 md:mx-28"
-    >
+    <div class="flex sm:justify-center md:items-center m-10 md:my-28 md:mx-28">
       <!-- SVG Section -->
+      <img
+        class="hidden md:block min-w-[300px] w-2/4 rounded-md"
+        src="./assets/feature-2.svg"
+        alt="feature-2"
+      />
       <div class="hidden md:block md:w-2/5 bg-slate-100 rounded-md"></div>
       <!-- Report Section -->
-      <div class="flex flex-col gap-3 items-start md:w-3/5">
+      <div class="flex flex-col gap-3 items-start">
         <!-- Feature Pill -->
         <div class="py-2 px-4 bg-slate-200 rounded-full">
           <p class="text-sm md:text-lg text-slate-700 font-semibold">Report</p>
@@ -274,7 +286,8 @@
         and find ways to save more
       </p>
       <!-- SVG Section -->
-      <div class="w-full h-96 bg-slate-100 rounded-md"></div>
+      <img class="w-full" src="./assets/peek.svg" alt="peek" />
+      <!-- <div class="w-full h-96 bg-slate-100 rounded-md"></div> -->
     </div>
 
     <!-- Testimonials Section -->
