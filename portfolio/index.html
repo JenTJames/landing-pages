@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTJ | Portfolio</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-w-full min-h-screen bg-slate-50">
+    <div class="flex flex-col z-50">
+      <div class="flex justify-between font-semibold px-5 py-3">
+        <div class="flex items-center">
+          <img class="w-12" src="./assets/logo.svg" alt="logo" />
+          <h1 class="font-bold text-xl text-slate-600 font-handwriting">Jen</h1>
+        </div>
+        <button class="rounded-full p-3" id="menuButton">
+          <span class="material-symbols-rounded text-slate-500"> menu </span>
+        </button>
+      </div>
+      <div
+        class="hidden w-full p-3 items-center flex-col gap-2 border-b"
+        id="mobileMenu"
+      >
+        <a class="text-slate-400 hover:text-emerald-500" href="#">About</a>
+        <a class="text-slate-400 hover:text-emerald-500" href="#">Skills</a>
+        <a class="text-slate-400 hover:text-emerald-500" href="#">Projects</a>
+        <a class="text-slate-400 hover:text-emerald-500" href="#"
+          >Experiences</a
+        >
+        <a class="text-slate-400 hover:text-emerald-500" href="#">Contact</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
