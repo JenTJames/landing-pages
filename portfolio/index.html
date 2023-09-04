@@ -20,27 +20,97 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="min-w-full min-h-screen bg-slate-50">
+    <!-- Navbar -->
     <div class="flex flex-col z-50">
-      <div class="flex justify-between font-semibold px-5 py-3">
+      <div class="flex justify-between items-center font-semibold px-5 py-3">
         <div class="flex items-center">
           <img class="w-12" src="./assets/logo.svg" alt="logo" />
-          <h1 class="font-bold text-xl text-slate-600 font-handwriting">Jen</h1>
+          <h1 class="font-bold text-xl gradient-text font-handwriting">Jen</h1>
         </div>
-        <button class="rounded-full p-3" id="menuButton">
+        <!-- Menu Button -->
+        <button class="block sm:hidden rounded-full p-3" id="menuButton">
           <span class="material-symbols-rounded text-slate-500"> menu </span>
         </button>
+        <div class="hidden sm:flex gap-5">
+          <a
+            class="text-slate-400 hover:text-cyan-600 sm:text-base md:text-lg"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-slate-400 hover:text-cyan-600 sm:text-base md:text-lg"
+            href="#"
+            >Skills</a
+          >
+          <a
+            class="text-slate-400 hover:text-cyan-600 sm:text-base md:text-lg"
+            href="#"
+            >Projects</a
+          >
+          <a
+            class="text-slate-400 hover:text-cyan-600 sm:text-base md:text-lg"
+            href="#"
+            >Experiences</a
+          >
+          <a
+            class="text-slate-400 hover:text-cyan-600 sm:text-base md:text-lg"
+            href="#"
+            >Contact</a
+          >
+        </div>
       </div>
+      <!-- Mobile Menu -->
       <div
         class="hidden w-full p-3 items-center flex-col gap-2 border-b"
         id="mobileMenu"
       >
-        <a class="text-slate-400 hover:text-emerald-500" href="#">About</a>
-        <a class="text-slate-400 hover:text-emerald-500" href="#">Skills</a>
-        <a class="text-slate-400 hover:text-emerald-500" href="#">Projects</a>
-        <a class="text-slate-400 hover:text-emerald-500" href="#"
-          >Experiences</a
+        <a class="text-slate-400 hover:text-cyan-600" href="#">About</a>
+        <a class="text-slate-400 hover:text-cyan-600" href="#">Skills</a>
+        <a class="text-slate-400 hover:text-cyan-600" href="#">Projects</a>
+        <a class="text-slate-400 hover:text-cyan-600" href="#">Experiences</a>
+        <a class="text-slate-400 hover:text-cyan-600" href="#">Contact</a>
+      </div>
+    </div>
+    <!-- Hero -->
+    <div
+      class="w-full flex flex-col p-5 md:flex-row items-center justify-around gap-5"
+    >
+      <div class="flex flex-col gap-3">
+        <div class="flex flex-col">
+          <h1 class="gradient-text text-5xl lg:text-7xl font-bold">
+            Hello, I am Jen.
+          </h1>
+          <p class="text-2xl lg:text-4xl font-semibold gradient-text">
+            Full Stack developer
+          </p>
+        </div>
+        <p
+          class="text-sm md:text-base lg:text-xl md:w-3/4 text-justify font-semibold text-slate-500"
         >
-        <a class="text-slate-400 hover:text-emerald-500" href="#">Contact</a>
+          Driven by clean code, a passion for problem-solving, and a constant
+          hunger for new tech, I specialize in crafting responsive websites,
+          optimizing databases, and fine-tuning APIs. <br />
+          Let's turn your digital dreams into reality.
+        </p>
+        <div class="hidden md:flex justify-start">
+          <button
+            class="btn-gradient py-3 px-10 text-white font-bold rounded-full hover:shadow-md"
+          >
+            Download Resume
+          </button>
+        </div>
+      </div>
+      <img
+        class="w-80 md:w-[350px] lg:w-3/5"
+        src="./assets/avatar.png"
+        alt="avatar"
+      />
+      <div class="flex md:hidden justify-start">
+        <button
+          class="btn-gradient py-3 px-10 text-white font-bold rounded-full hover:shadow-md"
+        >
+          Download Resume
+        </button>
       </div>
     </div>
     <script src="script.js"></script>

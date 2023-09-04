@@ -8,3 +8,22 @@
 .font-handwriting {
   font-family: "Pacifico", cursive;
 }
+
+.text-primary {
+  color: #8d5fc2;
+}
+
+.text-accent {
+  color: #1da8d1;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #8d5fc2, #1da8d1); /* Gradient colors */
+  -webkit-background-clip: text; /* For Webkit-based browsers like Chrome and Safari */
+  background-clip: text;
+  color: transparent; /* Set text color to transparent to reveal the gradient */
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #8d5fc2, #1da8d1); /* Gradient colors */
+}
